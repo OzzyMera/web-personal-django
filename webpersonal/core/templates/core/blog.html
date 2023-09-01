@@ -1,0 +1,99 @@
+{%extends "core/base.html" %}
+
+{% block title %} | Blog {% endblock %}
+
+{%block background%}{%load static%}{%static 'core/img/home-bg.jpg' %}{%endblock%}
+
+{%block headers%}
+<h1>Nuestro Blog</h1>
+<span class="subheading">Enterate de lo que dice nuestra comunidad</span>
+{%endblock%}
+
+{% block content %}  
+    <main class="contenedor seccion contenido-centrado">
+
+        <article class="entrada-blog">
+            <div class="imagen">
+                
+                    <source srcset="{%static 'core/img/blog1.wepb' %}" type="image/webp">
+                    <source srcset="{%static 'core/img/blog1.jpg' %}" type="image/jpeg">
+                    <img loading="lazy" src="{%static 'core/img/blog1.jpg' %}" alt="Texto Entrada Blog">
+                
+            </div>
+
+            <div class="texto-entrada">
+                <a href="{%url 'entrada' %}">
+                    <h4>Terraza en el techo de tu casa</h4>
+                    <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
+
+                    <p>
+                        Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero
+                    </p>
+                </a>
+            </div>
+        </article>
+
+        <article class="entrada-blog">
+            <div class="imagen">
+                
+                    <source srcset="{%static 'core/img/blog2.wepb' %}" type="image/webp">
+                    <source srcset="{%static 'core/img/blog2.jpg' %}" type="image/jpeg">
+                    <img loading="lazy" src="{%static 'core/img/blog2.jpg' %}" alt="Texto Entrada Blog">
+                
+            </div>
+
+            <div class="texto-entrada">
+                <a href="{%url 'entrada' %}">
+                    <h4>Guía para la decoración de tu hogar</h4>
+                    <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
+
+                    <p>
+                        Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio
+                    </p>
+                </a>
+            </div>
+        </article>
+
+        <article class="entrada-blog">
+            <div class="imagen">
+                
+                    <source srcset="{%static 'core/img/blog3.wepb' %}" type="image/webp">
+                    <source srcset="{%static 'core/img/blog3.jpg' %}" type="image/jpeg">
+                    <img loading="lazy" src="{%static 'core/img/blog3.jpg' %}" alt="Texto Entrada Blog">
+                
+            </div>
+
+            <div class="texto-entrada">
+                <a href="{%url 'entrada' %}">
+                    <h4>Terraza en el techo de tu casa</h4>
+                    <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
+
+                    <p>
+                        Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero
+                    </p>
+                </a>
+            </div>
+        </article>
+
+        <article class="entrada-blog">
+            <div class="imagen">
+                
+                    <source srcset="{%static 'core/img/blog4.wepb' %}" type="image/webp">
+                    <source srcset="{%static 'core/img/blog4.jpg' %}" type="image/jpeg">
+                    <img loading="lazy" src="{%static 'core/img/blog4.jpg' %}" alt="Texto Entrada Blog">
+                
+            </div>
+
+            <div class="texto-entrada">
+                <a href="{%url 'entrada' %}">
+                    <h4>Guía para la decoración de tu hogar</h4>
+                    <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
+
+                    <p>
+                        Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio
+                    </p>
+                </a>
+            </div>
+        </article>
+    </main>
+{%endblock%}
